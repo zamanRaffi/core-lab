@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const WA = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '8801XXXXXXXXX'
 const FB = process.env.NEXT_PUBLIC_FB_PAGE || 'https://m.me/your-page'
-const LOGO = process.env.NEXT_PUBLIC_SITE_LOGO || '/corelab.jpg'
+const LOGO = '/corelab.jpg'
 
 function waLink(msg) {
   return `https://wa.me/${WA}?text=${encodeURIComponent(msg || 'আমি পাঞ্জাবি অর্ডার করতে চাই')}`

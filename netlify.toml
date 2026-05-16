@@ -1,0 +1,5 @@
+[build.environment]
+# NEXT_PUBLIC_SITE_LOGO is a public asset path, and ADMIN_PASSWORD can appear
+# inside Netlify's generated edge-function bundle even when it is not committed.
+SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_SITE_LOGO"
+SECRETS_SCAN_OMIT_PATHS = ".netlify/edge-functions/**"
